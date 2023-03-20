@@ -39,6 +39,6 @@ public class Pagamento {
     }
 
     public double calcular() {
-        return this.tipo.getEstrategia().pagar(this);
+        return this.tipo.getEstrategia().pagar(this.valor);
     }
 }

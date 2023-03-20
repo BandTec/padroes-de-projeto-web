@@ -1,8 +1,8 @@
-package school.sptech.padroesprojeto.observer.solucao.modelo;
+package school.sptech.padroesprojeto.observer.solucao1.modelo;
 
 import org.springframework.mail.javamail.JavaMailSender;
-import school.sptech.padroesprojeto.observer.solucao.modelo.observer.Observado;
-import school.sptech.padroesprojeto.observer.solucao.modelo.observer.Observador;
+import school.sptech.padroesprojeto.observer.solucao1.modelo.observer.Observado;
+import school.sptech.padroesprojeto.observer.solucao1.modelo.observer.Observador;
 
 import java.util.ArrayList;
 import java.util.List;

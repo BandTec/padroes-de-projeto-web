@@ -1,8 +1,8 @@
-package school.sptech.padroesprojeto.adapter.solucao.modelo.adapter;
+package school.sptech.padroesprojeto.adapter.solucao1.modelo.adapter;
 
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.sistema.Sistema;
-import school.sptech.padroesprojeto.adapter.solucao.modelo.SistemaOperacional;
+import school.sptech.padroesprojeto.adapter.solucao1.modelo.SistemaOperacional;
 
 public class SistemaOperacionalLoocaImpl implements SistemaOperacionalMetricas {
 

@@ -1,4 +1,4 @@
-package school.sptech.padroesprojeto.observer.solucao;
+package school.sptech.padroesprojeto.observer.solucao1;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import school.sptech.padroesprojeto.observer.solucao.modelo.Assinante;
-import school.sptech.padroesprojeto.observer.solucao.modelo.Conteudo;
+import school.sptech.padroesprojeto.observer.solucao1.modelo.Assinante;
+import school.sptech.padroesprojeto.observer.solucao1.modelo.Conteudo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +18,15 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/conteudos")
 public class ConteudoController {
+
+    /*
+        O Observer é um padrão de projeto comportamental que permite que você defina um
+         mecanismo de assinatura paranotificar múltiplos objetos sobre quaisquer eventos que
+         aconteçam com o objeto que eles estão observando.
+
+        Referência:
+        https://refactoring.guru/pt-br/design-patterns/observer
+     */
 
     @Autowired
     private JavaMailSender enviador;

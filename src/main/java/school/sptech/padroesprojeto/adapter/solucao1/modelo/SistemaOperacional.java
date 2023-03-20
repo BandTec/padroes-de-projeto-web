@@ -1,4 +1,4 @@
-package school.sptech.padroesprojeto.adapter.solucao.modelo;
+package school.sptech.padroesprojeto.adapter.solucao1.modelo;
 
 public class SistemaOperacional {
 

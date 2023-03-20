@@ -1,4 +1,4 @@
-package school.sptech.padroesprojeto.adapter.problema;
+package school.sptech.padroesprojeto.adapter.problema1;
 
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.sistema.Sistema;
@@ -15,6 +15,14 @@ import java.util.Map;
 public class SistemaOperacionalController1 {
 
     @GetMapping("/atual1")
+    public Sistema buscarLooca() {
+        Looca looca = new Looca();
+        Sistema sistema = looca.getSistema();
+        return sistema;
+    }
+
+
+//    @GetMapping("/atual2")
     public Map<String, String> buscarApache() {
         Map<String, String> mapa = new HashMap<>();
 
@@ -25,18 +33,4 @@ public class SistemaOperacionalController1 {
         return mapa;
     }
 
-    //@GetMapping("/atual1")
-    public Map<String, String> buscarLooca() {
-
-        final Looca looca = new Looca();
-        Sistema sistema = looca.getSistema();
-
-        Map<String, String> mapa = new HashMap<>();
-
-        mapa.put("nome", sistema.getSistemaOperacional());
-        mapa.put("base", String.format("%s bits", sistema.getArquitetura()));
-        mapa.put("versao", sistema.getFabricante());
-
-        return mapa;
-    }
 }
